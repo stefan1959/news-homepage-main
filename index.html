@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="news">
+      <div class="news_menu">
+        <div class="news_logo">
+          <img src="/assets/images/logo.svg" alt="logo" />
+        </div>
+        <nav class="news_nav" id="news_nav">
+          <input
+            type="checkbox"
+            class="menu_btn"
+            aria-controls="primary-nav"
+            aria-expanded="false"
+            name="nav-toggle"
+            id="nav-toggle"
+          />
+          <ul class="news_nav-items" id="primary-nav">
+            <li class="news_nav-item"><a href="#">Home</a></li>
+            <li class="news_nav-item"><a href="#">New</a></li>
+            <li class="news_nav-item"><a href="#">Popular</a></li>
+            <li class="news_nav-item"><a href="#">Trending</a></li>
+            <li class="news_nav-item"><a href="#">Categories</a></li>
+          </ul>
+          <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+        </nav>
+      </div>
+      <div class="news_hero">
+        <picture class="news_img">
+          <source
+            media="(min-width:1220px)"
+            srcset="/assets/images/image-web-3-desktop.jpg"
+          />
+          <img src="/assets/images/image-web-3-mobile.jpg" alt="" />
+        </picture>
+        <div class="news_main-info">
+          <div class="news_main-heading">The Bright Future of Web 3.0?</div>
+          <div class="news_main-content">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+            <button class="news_button">Read more</button>
+          </div>
+        </div>
+      </div>
+      <aside class="news_new">
+        <div class="news_new-header">New</div>
+        <div class="news_new-item seperator">
+          <div class="news_new-heading">
+            <a href="#">Hydrogen VS Electric Cars</a>
+          </div>
+          <div>Will hydrogen-fueled cars ever catch up to EVs?</div>
+        </div>
+        <div class="news_new-item seperator">
+          <div class="news_new-heading">
+            <a href="#">The Downsides of AI Artistry</a>
+          </div>
+          <div>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </div>
+        </div>
+        <div class="news_new-item">
+          <div class="news_new-heading">
+            <a href="#">Is VC Funding Drying Up?</a>
+          </div>
+          <div>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </div>
+        </div>
+      </aside>
+      <div class="news_cards">
+        <div class="news_card">
+          <div><img src="/assets/images/image-retro-pcs.jpg" alt="" /></div>
+          <div class="news_card-info">
+            <div class="news_card-number">01</div>
+            <div class="news_card-heading">
+              <a href="#">Reviving Retro PCs</a>
+            </div>
+            <div>What happens when old PCs are given modern upgrades?</div>
+          </div>
+        </div>
+        <div class="news_card">
+          <div><img src="/assets/images/image-top-laptops.jpg" alt="" /></div>
+          <div class="news_card-info">
+            <div class="news_card-number">02</div>
+            <div class="news_card-heading">
+              <a href="#">Top 10 Laptops of 2022</a>
+            </div>
+            <div>Our best picks for various needs and budgets.</div>
+          </div>
+        </div>
+        <div class="news_card">
+          <div><img src="/assets/images/image-gaming-growth.jpg" alt="" /></div>
+          <div class="news_card-info">
+            <div class="news_card-number">03</div>
+            <div class="news_card-heading">
+              <a href="#">The Growth of Gaming</a>
+            </div>
+            <div>How the pandemic has sparked fresh opportunities.</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Stephen Petersen</a>.
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
